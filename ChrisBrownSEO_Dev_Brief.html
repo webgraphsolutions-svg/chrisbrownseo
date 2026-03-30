@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Brief — ChrisBrownSEO.com</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f8f6; color: #1a1a1a; margin: 0; padding: 40px 20px; line-height: 1.6; }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 12px; margin-bottom: 6px; }
+  .meta { font-size: 0.82rem; color: #666; margin-bottom: 40px; }
+  .task { background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 28px 32px; margin-bottom: 24px; }
+  .task-num { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 6px; }
+  .task-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .tag { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 9px; border-radius: 3px; }
+  .tag-high { background: #fef3cd; color: #856404; }
+  .tag-med { background: #d4edda; color: #155724; }
+  p { font-size: 0.92rem; color: #444; margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 8px 0 12px; padding-left: 20px; }
+  li { font-size: 0.9rem; color: #444; margin-bottom: 6px; }
+  code { background: #f0f0ee; border: 1px solid #ddd; border-radius: 3px; padding: 2px 6px; font-family: 'Courier New', monospace; font-size: 0.85rem; color: #c7254e; }
+  pre { background: #1a1a1a; color: #e8e8e8; border-radius: 5px; padding: 18px 20px; font-family: 'Courier New', monospace; font-size: 0.82rem; line-height: 1.7; overflow-x: auto; margin: 12px 0; }
+  .note { background: #f0f4ff; border-left: 3px solid #4a6cf7; padding: 10px 14px; border-radius: 0 4px 4px 0; font-size: 0.85rem; color: #333; margin: 12px 0; }
+  .divider { height: 1px; background: #e8e8e8; margin: 16px 0; }
+  .file-box { background: #f5f5f3; border: 1px dashed #bbb; border-radius: 4px; padding: 10px 14px; font-size: 0.85rem; color: #555; margin: 10px 0; display: flex; align-items: center; gap: 8px; }
+  .file-box span { font-size: 1.1rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Developer Brief — ChrisBrownSEO.com</h1>
+  <div class="meta">Site: chrisbrownseoservices.com &nbsp;·&nbsp; Hosted on Vercel (GitHub auto-deploy) &nbsp;·&nbsp; 3 tasks total</div>
+
+  <!-- TASK 1 -->
+  <div class="task">
+    <div class="task-num">Task 01</div>
+    <div class="task-title">
+      Deploy Updated index.html
+      <span class="tag tag-high">Priority</span>
+    </div>
+    <p>Replace the current <code>index.html</code> in the GitHub repo with the attached file. This update includes two changes already baked in:</p>
+    <ul>
+      <li><strong>Mobile hamburger nav</strong> — 3-bar icon (☰ → ✕) that appears on screens under 900px. Opens a full-width dropdown with all nav links and a gold CTA button. Closes on tap or scroll.</li>
+      <li><strong>Formspree form integration</strong> — the "Get Your Free Audit" form now submits to Formspree (ID: <code>mqegeqly</code>) instead of opening a mailto link. Submissions are delivered to the client's inbox.</li>
+    </ul>
+    <div class="note">No design changes — fonts, colors, layout, and all sections are identical to the current live site.</div>
+    <div class="divider"></div>
+    <p><strong>How to deploy:</strong></p>
+    <ul>
+      <li>Go to the GitHub repo → click <code>index.html</code> → click the pencil (Edit) icon</li>
+      <li>Select all → delete → paste the contents of the attached file</li>
+      <li>Click <strong>Commit changes</strong> — Vercel deploys automatically (~30 seconds)</li>
+    </ul>
+    <div class="file-box"><span>📎</span> Attached: <strong>ChrisBrownSEO_FINAL.html</strong> → rename to <strong>index.html</strong> before committing</div>
+  </div>
+
+  <!-- TASK 2 -->
+  <div class="task">
+    <div class="task-num">Task 02</div>
+    <div class="task-title">
+      Formspree — Set Notification Email
+      <span class="tag tag-high">Priority</span>
+    </div>
+    <p>The form is already wired to Formspree account <code>mqegeqly</code>. One step remaining on the Formspree dashboard:</p>
+    <ul>
+      <li>Log in at <strong>formspree.io</strong></li>
+      <li>Open the form named <em>Chris Brown SEO - Audit Request</em></li>
+      <li>Go to <strong>Settings → Notifications</strong></li>
+      <li>Set the notification email to the inbox where audit requests should be received</li>
+    </ul>
+    <div class="note">Free plan supports up to 50 submissions/month. Upgrade at formspree.io if volume increases.</div>
+  </div>
+
+  <!-- TASK 3 -->
+  <div class="task">
+    <div class="task-num">Task 03</div>
+    <div class="task-title">
+      Blog Setup — /blog/ Folder
+      <span class="tag tag-med">Secondary</span>
+    </div>
+    <p>Create a <code>/blog/</code> folder in the root of the GitHub repo and add 2 static HTML article pages. Vercel will serve them automatically at the URLs below.</p>
+    <div class="divider"></div>
+    <p><strong>Article 1</strong></p>
+    <ul>
+      <li>File: <code>/blog/miami-seo-consultant.html</code></li>
+      <li>URL: <code>chrisbrownseoservices.com/blog/miami-seo-consultant</code></li>
+      <li>H1 / Title tag: <em>"How to Choose a Miami SEO Consultant (And What to Avoid)"</em></li>
+      <li>Target keyword: <strong>miami seo consultant</strong></li>
+    </ul>
+    <p><strong>Article 2</strong></p>
+    <ul>
+      <li>File: <code>/blog/affordable-seo-packages-miami.html</code></li>
+      <li>URL: <code>chrisbrownseoservices.com/blog/affordable-seo-packages-miami</code></li>
+      <li>H1 / Title tag: <em>"Affordable SEO Packages in Miami: What You Actually Get"</em></li>
+      <li>Target keyword: <strong>affordable seo packages miami</strong></li>
+    </ul>
+    <div class="divider"></div>
+    <p><strong>Requirements for each article:</strong></p>
+    <ul>
+      <li>600–900 words, written around the target keyword naturally</li>
+      <li>H1 matches the title tag exactly</li>
+      <li>At least one internal link back to the homepage with CTA anchor text (e.g. "Get a free SEO audit")</li>
+      <li>Header and footer matching the main site design (dark background <code>#111318</code>, gold <code>#c9a84c</code>, Syne + Instrument Serif fonts)</li>
+      <li>Meta description tag targeting the keyword</li>
+    </ul>
+    <div class="note">Content for both articles can be provided separately. Dev only needs to handle file creation and structure — content will be supplied.</div>
+  </div>
+
+</div>
+</body>
+</html>
